@@ -12,7 +12,7 @@ app.use(bodyparser.json());
 app.use(morgan('dev'));
 connection.init();
 routes.configure(app);
-var server = app.listen(process.env || 3000, function() {
+var server = app.listen(process.env || 5000, function() {
     
   console.log('Server listening on port ' + server.address().port);
 });
