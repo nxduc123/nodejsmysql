@@ -6,10 +6,10 @@ function Connection() {
   this.init = function() {
     this.pool = mysql.createPool({
       connectionLimit: 10,
-      host: 'sql12.freemysqlhosting.net',
-      user: 'sql12228895',
-      password: 'yMULImSZep',
-      database: 'sql12228895'
+      host: 'ducnxdb.ckn50iid6cii.us-east-1.rds.amazonaws.com',
+      user: 'nxduc123',
+      password: 'nxduc123',
+      database: 'nxduc123'
     });
   };
   
