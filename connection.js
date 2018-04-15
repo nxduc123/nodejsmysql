@@ -5,7 +5,7 @@ function Connection() {
   
   this.init = function() {
     this.pool = mysql.createPool({
-      connectionLimit: 10,
+      connectionLimit: 100,
       host: 'ducnxdb.ckn50iid6cii.us-east-1.rds.amazonaws.com',
       user: 'nxduc123',
       password: 'nxduc123',
@@ -16,7 +16,7 @@ function Connection() {
   this.acquire = function(callback) {
     this.pool.getConnection(function(err, connection) {
       callback(err, connection);
-      
+      console.log(err)
     });
   };
 }
